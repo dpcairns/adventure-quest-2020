@@ -12,16 +12,12 @@ form.addEventListener('submit', (e) => {
     const data = new FormData(form);
 
 
-    const user = {
+    // go to local storage in browser to see if this worked
+    saveUser({
         name: data.get('name'),
         class: data.get('class'),
         gold: 0,
         hp: 35,
         completed: {}
-    };
-
-    const stringyUser = JSON.stringify(user);
-
-    localStorage.setItem('USER', stringyUser);
-    // go to local storage in browser to see if this worked
+    });
 });
