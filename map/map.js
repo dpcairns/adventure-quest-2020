@@ -7,6 +7,7 @@ quests.forEach(quest => {
     const link = document.createElement('a');
 
     link.textContent = quest.title;
+    link.href = `/quest/?id=${quest.id}`;
 
     ul.append(link);
 });
