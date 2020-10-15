@@ -20,4 +20,6 @@ form.addEventListener('submit', (e) => {
         hp: 35,
         completed: {}
     });
+
+    window.location.href = './map/';
 });
